@@ -13,9 +13,12 @@ using namespace std;
 
 int main() {
 
-    char name;
+    string name;
     cout << "Hello! Whats your name? ";
-    
+    cin >> name;
+
+    cout << "Hello"<<name;
+
 
 
 
