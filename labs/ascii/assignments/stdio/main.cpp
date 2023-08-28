@@ -13,14 +13,15 @@ using namespace std;
 
 int main() {
 
-    string name;
+    string fname;
+    string lname;
     cout << "Hello! Whats your name? ";
-    cin >> name;
+    cin >> fname, lname;
 
-    cout << "Hello"<<name;
+    cout << "Hello "<<fname << " " <<lname;
 
 
-
+    return 0;
 
 
 }
