@@ -13,14 +13,13 @@ using namespace std;
 
 int main() {
 
-    string fname;
-    string lname;
+    string name;
     cout << "Hello! Whats your name? ";
-    cin >> fname, lname;
+    getline(cin, name);
 
-    cout << "Hello "<<fname << " " <<lname;
-
-
+    cout << "\nHello "<<name << "\n";
+    cout << "\nHangman is current under construction, maybe you'll see it in a couple of weeks... ";
+    cout << "\nHere are what the stages will look like!\n";
     return 0;
 
 
