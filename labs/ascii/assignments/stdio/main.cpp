@@ -18,8 +18,10 @@ int main() {
     getline(cin, name);
 
     cout << "\nHello "<<name << "\n";
+    cin.get();
     cout << "\nHangman is current under construction, maybe you'll see it in a couple of weeks... ";
     cout << "\nHere are what the stages will look like!\n";
+    cin.get();
     return 0;
 
 
