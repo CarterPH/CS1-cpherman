@@ -31,6 +31,9 @@ int main()
     string line1 = "  |\\_/|   **********************    (\\_/)\n";
     cout << line1;
 
+    string line2 = " /  @  @ \\      	*                   ASCII Lab               *  	  (='.'=)\n";
+    cout << line2;
+    string line3 = "( >   0  <   )       *              By: Carter Herman      * 	( \" )_( \" )";
     //FIXME6: use variable to print the second line line of the graphic
     //FIXME7: print the third line of the graphics
     //FIXME8: use variable to print the fourth line
@@ -38,7 +41,6 @@ int main()
     //Note: You can add more lines or print more ASCII arts of your choice if you'd like...
 
     cout << "\nGood bye... hit enter to exit the program: " << '\n';
-    //FIXME10: make the console wait for user input
-
+    cin.get();
     return 0; //exit program by returning 0 status to the system
 }
