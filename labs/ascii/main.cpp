@@ -34,6 +34,11 @@ int main()
     string line2 = " /  @  @ \\      	*                   ASCII Lab               *  	  (='.'=)\n";
     cout << line2;
     string line3 = "( >   0  <   )       *              By: Carter Herman      * 	( \" )_( \" )";
+    cout << line3;
+    string line4 = ">>x<<        	*                     CSCI 111              *";
+    cout << line4;
+    string line5 = "   /   O  \\       	***************************** ";
+    cout << line5;
     //FIXME6: use variable to print the second line line of the graphic
     //FIXME7: print the third line of the graphics
     //FIXME8: use variable to print the fourth line
