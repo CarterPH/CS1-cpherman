@@ -22,6 +22,34 @@ int main() {
     cout << "\nHangman is current under construction, maybe you'll see it in a couple of weeks... ";
     cout << "\nHere are what the stages will look like!\n";
     cin.get();
+
+    std::cout << R"(
+        Stage 0
+
+        |----------------- 						
+        |/        	| 
+        | 	
+        |
+        | 	
+        |
+        | 				              
+        ===========	
+
+    )"; // https://cplusplus.com/forum/general/58945/
+    cin.get();
+    std::cout << R"(
+        Stage 1
+
+        |----------------- 						
+        |/         | 
+        | 	    ( )
+        |
+        | 	
+        |
+        | 				              
+        ===========	
+
+    )"; 
     return 0;
 
 
