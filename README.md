@@ -24,7 +24,7 @@
 | Name | 1 - Std IO HW |
 | Description | Homework covering standard input and output |
 | Due Date | 11-Sept-23 |
-| Status | In Progress |
-| Location | https://github.com/CarterPH/CS1-cpherman/blob/main/labs/ascii/assignments/stdio/main.cpp |
-| Self Grade | 50/100 |
+| Status | Done |
+| Location | https://github.com/CarterPH/CS1-cpherman/blob/main/assignments/stdio/main.cpp |
+| Self Grade | 90/100 |
 | Notes | None |
