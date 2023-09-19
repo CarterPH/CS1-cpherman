@@ -27,7 +27,7 @@ int main() {
 
     double radius=0, area=0, circumference=0;
 
-    string name "Anonymous";
+    string name = "Anonymous";
     cout << "Hi there, what's your full name? ";
     getline(cin, name);
 
@@ -39,9 +39,9 @@ int main() {
     area = pi * pow(radius, 2);
     circumference = 2 * pi * radius;
 
-    cout << "Your circle has radius: " << fixed << setprecision(6) << radius << endl:
+    cout << "Your circle has radius: " << fixed << setprecision(6) << radius << endl;
     cout << "Area of the circle is:\t" << area << '\n';
-    cout << "Circumference of the circle is: " << circumference << endl;
+    cout << "Circumference of the circle is:\t" << circumference << endl;
 
     cout << "Good bye... \nHit enter to exit the program!" << "\n";
     cin.ignore(1000, '\n');
