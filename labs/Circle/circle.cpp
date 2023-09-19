@@ -31,5 +31,17 @@ int main() {
     cout << "Hi there, what's your full name? ";
     getline(cin, name);
 
-    
+    cout << "Nice meeting you, " << name << "!" << endl;
+
+    cout << name << ", please enter a radius of a circle: ";
+    cin >> radius;
+
+    area = pi * pow(radius, 2);
+    circumference = 2 * pi * radius;
+
+    cout << "Your circle has radius: " << fixed << setprecision(6) << radius << endl:
+    cout << "Area of the circle is:\t" << area << '\n';
+    cout << "Circumference of the circle is: " << circumference << endl;
+
+
 }
