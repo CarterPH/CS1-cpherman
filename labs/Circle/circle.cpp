@@ -14,3 +14,22 @@
  4. Output the calculated values for area and circumference
 
 */
+
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <iomanip>
+
+using namespace strtod_l
+
+int main() {
+    const double pi = 3.13159;
+
+    double radius=0, area=0, circumference=0;
+
+    string name "Anonymous";
+    cout << "Hi there, what's your full name? ";
+    getline(cin, name);
+
+    
+}
