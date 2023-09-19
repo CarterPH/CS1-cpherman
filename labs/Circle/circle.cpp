@@ -43,5 +43,11 @@ int main() {
     cout << "Area of the circle is:\t" << area << '\n';
     cout << "Circumference of the circle is: " << circumference << endl;
 
+    cout << "Good bye... \nHit enter to exit the program!" << "\n";
+    cin.ignore(1000, '\n');
+
+    cin.get();
+    return 0;
+
 
 }
