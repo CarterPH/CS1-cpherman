@@ -14,6 +14,17 @@
 | Self Grade | A |
 | Notes | Fixed all parts. |
 
+### Lab #2
+
+| Name | Value |
+| :--- | :--- |
+| Name | 2 - Circle Lab |
+| Description | Lab covering math input and calculation |
+| Due Date | 19-Sept-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/Circle |
+| Self Grade | A |
+| Notes | Fixed all parts. |
 
 ## Homeworks
 
