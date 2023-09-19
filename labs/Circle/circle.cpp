@@ -20,7 +20,7 @@
 #include <cmath>
 #include <iomanip>
 
-using namespace strtod_l
+using namespace std;
 
 int main() {
     const double pi = 3.13159;
