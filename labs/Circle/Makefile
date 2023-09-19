@@ -20,6 +20,9 @@ all:
 	$(CXX) $(CXXFLAGS) $(CPPFILES)
 	$(CXX) -o $(PROGRAM) *.o
 
+
+run: 
+		./$(PROGRAM)
 # make clean rule
 # delete object and binary files
 clean:
