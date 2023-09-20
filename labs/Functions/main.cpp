@@ -24,3 +24,19 @@ Algorithm steps:
 using namespace std;
 
 const float epsilon = 1e-5;
+
+double findDistance(int, int, int, int);
+
+
+void test();
+
+
+void clearScreen() {
+
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
+
+}
