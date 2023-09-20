@@ -38,7 +38,7 @@ void clearScreen() {
     #else
         system("clear");
     #endif
-
+}
 int main() {
 
     int x1, y1, x2, y2;
@@ -53,6 +53,37 @@ int main() {
         printf("(x1, y1) = (%d, %d)\n", x1, y1);
 
         cout << "Enter a second point in the form (x, y): ";
+        cin >> ch >> x2 >> ch >> y2 >> ch;
+        test();
+
+        findDistance(x1, y1, x2, y2);
+        printf("(x2, y2) = (%d, %d)\n", x2, y2);
+
     }
+    cin.ignore(1000, '\n');
+    cout << "Enter to quit the program: ";
+    cin.get();
+    cout << "Good bye..." << endl;
+    return 0;
 }
+
+double findDistance(int x1, int y1, int x2, int y2) {
+  double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+  return distance;
+}
+
+void test () {
+    float result = findDistance (4, 3, 5, 1);
+    float expected = 2.236067f;
+    assert( fabs(result - expected) <= epsilon);
+    float result2 = findDistance (1, 3, 9, 8);
+    float expected2 = 9.433981f;
+    assert( fabs(result2 - expected2) <= epsilon);
+    float result3 = findDistance (31, 23, 53, 72);
+    float expected3 = 53.712196f;
+    assert( fabs(result3 - expected3) <= epsilon);
+
+    cerr << "all tests passed..." << endl;
+
 }
