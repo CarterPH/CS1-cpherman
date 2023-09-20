@@ -39,4 +39,20 @@ void clearScreen() {
         system("clear");
     #endif
 
+int main() {
+
+    int x1, y1, x2, y2;
+    char ch;
+
+    while (std::getline(std::cin, line) && !line.empty()) {  // https://stackoverflow.com/questions/33249215/keep-running-program-until-user-input-exit
+        clearScreen();
+        cout << "Program calculates distance betweem 2 points on a 2D coordinate." << endl;
+        cout << "Enter a point in the form (x, y): ";
+
+        cin >> ch >> x1 >> ch >> y1 >> ch;
+        printf("(x1, y1) = (%d, %d)\n", x1, y1);
+
+        cout << "Enter a second point in the form (x, y): ";
+    }
+}
 }
