@@ -43,7 +43,7 @@ int main() {
 
     int x1, y1, x2, y2;
     char ch;
-
+    string line;
     while (std::getline(std::cin, line) && !line.empty()) {  // https://stackoverflow.com/questions/33249215/keep-running-program-until-user-input-exit
         clearScreen();
         cout << "Program calculates distance betweem 2 points on a 2D coordinate." << endl;

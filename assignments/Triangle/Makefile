@@ -8,10 +8,10 @@ CXX = g++
 CXXFLAGS = -c -g -Wall -std=c++17
 
 # the build target executable file; .exe is not required
-PROGRAM = distance.exe
+PROGRAM = triangle.exe
 
 # list .cpp files separated by space
-CPPFILES = main.cpp
+CPPFILES = triangle.cpp
 
 # make build rule/default rule that'll be run when we run "make"
 # first compile each file to object file
