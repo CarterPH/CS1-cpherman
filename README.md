@@ -39,3 +39,15 @@
 | Location | https://github.com/CarterPH/CS1-cpherman/blob/main/assignments/stdio/main.cpp |
 | Self Grade | 90/100 |
 | Notes | None |
+
+### Homework #2
+
+| Name | Value |
+| :--- | :--- |
+| Name | 2 - Triangle |
+| Description | Cmath and triangle equations |
+| Due Date | 25-Sept-23 |
+| Status | Done |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/assignments/Triangle |
+| Self Grade | 90/100 |
+| Notes | None |
