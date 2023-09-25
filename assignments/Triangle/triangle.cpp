@@ -31,28 +31,28 @@ int main() {
 
     bool valid;
 
-    if (a + b <= c || a + c <= b || b + c <= a) {
-        valid = false;
+    if (a + b > c && a + c > b && b + c > a) {
+        valid = true;
     }
     else {
-        valid = true;
+        valid = false;
     }
 
     cout << "The area of the trinangle is: " << area << endl;
     cout << "The perimeter of the triangle is: " << perimeter << endl;
-    if (valid == true) {
-        cout << "The triangle is a real triangle!";
+    if (valid) {
+        cout << "The triangle is a real triangle!" << endl;
     }
     else {
-        cout << "This triangle is not real.";
+        cout << "This triangle is not real." << endl;
     }
-
+    cin.get();
 
 }
 
 double findArea (double a, double b, double c) {
     
-    double s = perimeter / 2.0;
+    double s = (a + b + c)/ 2.0;
 
     double area = sqrt(s * (s - a) * (s - b) * (s - c));
 
