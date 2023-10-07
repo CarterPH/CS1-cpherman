@@ -50,3 +50,9 @@ void difference(float in2, float in1) {
     
     return main();
 }
+void quotient(float in2, float in1) {
+    float quot = in1 / in2;
+    cout << "The quotient of your numbers is " << quot << endl;
+    
+    return main();
+}
