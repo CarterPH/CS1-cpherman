@@ -56,3 +56,9 @@ void quotient(float in2, float in1) {
     
     return main();
 }
+void rem(int in2, int in1) {
+    float rem = in1 % in2;
+    cout << "The remainder of your numbers is " << rem << endl;
+    
+    return main();
+}
