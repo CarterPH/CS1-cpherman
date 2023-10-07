@@ -62,3 +62,9 @@ void rem(int in2, int in1) {
     
     return main();
 }
+void power(float in2, float in1) {
+    float power = pow(in1, in2);
+    cout << in1 << " to the power of " << in2 << enl;
+    
+    return main();
+}
