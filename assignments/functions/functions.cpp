@@ -37,3 +37,9 @@ void sum(float in2, float in1) {
     return main();
 }
 
+void product(float in2, float in1) {
+    float product = in1 * in2;
+    cout << "The product of your numbers is " << product << endl;
+    
+    return main();
+}
