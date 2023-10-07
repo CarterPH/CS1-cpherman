@@ -43,3 +43,10 @@ void product(float in2, float in1) {
     
     return main();
 }
+
+void difference(float in2, float in1) {
+    float diff = in1 - in2;
+    cout << "The difference of your numbers is " << diff << endl;
+    
+    return main();
+}
