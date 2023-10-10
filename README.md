@@ -49,6 +49,19 @@
 | Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/conditionals |
 | Self Grade | A |
 | Notes | Fixed all parts. |
+
+### Lab #5
+
+| Name | Value |
+| :--- | :--- |
+| Name | 5 - Loops Lab |
+| Description | Lab covering loops. |
+| Due Date | 11-Oct-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/loops |
+| Self Grade | A |
+| Notes | Fixed all parts. |
+
 ## Homeworks
 
 ### Homework #1
