@@ -160,12 +160,41 @@ void test() {
     assert(findSum(-5, 10.5) == 5.5); // test case 2
 
     // FIXME9 – Using assert function write at least 2 test cases for each of the following functions
-    double answer = findDifference(2, 1);
-    double expected = 1;
-    assert
+    double answer2 = findDifference(2, 1);
+    double expected2 = 1;
+    assert(answer2 == expected);
+    assert(findDifference(5, 3) == 2);
+
+    double answer3 = findProduct(2, 1);
+    double expected3 = 2;
+    assert(answer3 == expected3);
+    assert(findProduct(5, 3) == 15);
+
+    double answer4 = findLarger(2, 1);
+    double expected4 = 2;
+    assert(answer4 == expected4);
+    assert(findLarger(5, 3) == 5);
+
+    double answer5 = findSmaller(2, 1);
+    double expected5 = 1;
+    assert(answer5 == expected5);
+    assert(findSmaller(5, 3) == 3);
+
+    double answer6 = findQuotient(2, 1);
+    double expected6 = 2;
+    assert(answer6 == expected6);
+    assert(findQuotient(2, 8) == 0.25);
+
+    double avg;
+    findAverage(2, 1, avg);
+    double expected7 = 1.5;
+    assert(avg == expected7);
+    findAverage(6, 2, avg);
+    double expected8 = 4;
+    assert(avg == expected8); //fixed
     // findDifference(), findProduct(), findLarger(),
     // findSmaller(), findQuotient(), findAverage()
-    printf("%s\n", "all test cases passed...");
+    printf("%s\n", "all test cases passed..."); 
 }
 
 // the crux of the program that uses all the defined functions
@@ -221,8 +250,9 @@ bool program() {
         // Fixed
         case 4:
         {
+            double avg;
             getTwoNumbers(num1, num2);
-            findAverage(num1, num2);
+            findAverage(num1, num2, avg);
             printf("The average of your numbers is ", avg);
             break;
 
