@@ -46,13 +46,15 @@ int main(int argc, char* argv[]) {
     large_int *sum = new large_int; //declare sum as a dynamic variable
     large_int *prod = new large_int;
     // FIXME3 - declare dynamic variables to store difference and larger values
+    large_int *diff = new large_int;
+    big_int *larger = new big_int; // fixed
     // Must use these variables to store the returned values from functions
 
     OPERATION oper;
     do { //fixed
         //FIXME4: Add do... while loop to continue the program until the user wants to quit
         //FIXME5: call clear function defined above to clear the screen
-        clear();
+        clear(); //fixed
         showMenu();
         cin >> input;
         oper = getOperation(input);
@@ -77,14 +79,14 @@ int main(int argc, char* argv[]) {
             case SUBTRACT:
                 cout << "Enter two whole numbers seperated by space: ";
                 cin >> *num1 >> *num2;
-                large_int diff = MyFunctions::findDifference(*num1, *num2);
-                printf("%lld - %lld = %lld\n", *num1, *num2, diff);
+                *diff = MyFunctions::findDifference(*num1, *num2);
+                printf("%lld - %lld = %lld\n", *num1, *num2, *diff);
                 break;
             case LARGER: //fixed
                 cout << "Enter two whole numbers seperated by space: ";
                 cin >> *num1 >> *num2;
-                big_int larger = MyFunctions::findLarger(num1, num2);
-                printf("The larger of %lld and %lld is %lld\n", *num1, *num2, larger);
+                *larger = MyFunctions::findLarger(num1, num2);
+                printf("The larger of %lld and %lld is %lld\n", *num1, *num2, *larger);
                 break;
             default:
                 break;
