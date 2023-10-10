@@ -49,33 +49,50 @@ int main(int argc, char* argv[]) {
     // Must use these variables to store the returned values from functions
 
     OPERATION oper;
-    
-    //FIXME4: Add do... while loop to continue the program until the user wants to quit
-    //FIXME5: call clear function defined above to clear the screen
-    showMenu();
-    cin >> input;
-    oper = getOperation(input);
-    switch (oper) {
-        case ADD:
-            cout << "Enter two whole numbers separated by space: ";
-            // store the data by dereferencing pointers
-            cin >> *num1 >> *num2;
-            // passing pointers to findSum function
-            *sum = MyFunctions::findSum(num1, num2);
-            printf("%lld + %lld = %lld\n", *num1, *num2, *sum);
-            break;
-            // FIXME6: complete the rest of the cases to perform other operations
-        case MULTIPLY:
-            cout << "Enter two whole numbers separated by space: ";
-            // store the data by dereferencing pointers
-            cin >> *num1 >> *num2;
-            // passing pointers to findSum function
-            *prod = MyFunctions::findProduct(*num1, *num2);
-            printf("%lld * %lld = %lld\n", *num1, *num2, *prod);
-            break;
-        default:
-            break;
-    }
+    do { //fixed
+        //FIXME4: Add do... while loop to continue the program until the user wants to quit
+        //FIXME5: call clear function defined above to clear the screen
+        clear();
+        showMenu();
+        cin >> input;
+        oper = getOperation(input);
+        switch (oper) {
+            case ADD:
+                cout << "Enter two whole numbers separated by space: ";
+                // store the data by dereferencing pointers
+                cin >> *num1 >> *num2;
+                // passing pointers to findSum function
+                *sum = MyFunctions::findSum(num1, num2);
+                printf("%lld + %lld = %lld\n", *num1, *num2, *sum);
+                break;
+                // FIXME6: complete the rest of the cases to perform other operations
+            case MULTIPLY:
+                cout << "Enter two whole numbers separated by space: ";
+                // store the data by dereferencing pointers
+                cin >> *num1 >> *num2;
+                // passing pointers to findSum function
+                *prod = MyFunctions::findProduct(*num1, *num2);
+                printf("%lld * %lld = %lld\n", *num1, *num2, *prod);
+                break;
+            case SUBTRACT:
+                cout << "Enter two whole numbers seperated by space: ";
+                cin >> *num1 >> *num2;
+                large_int diff = MyFunctions::findDifference(*num1, *num2);
+                printf("%lld - %lld = %lld\n", *num1, *num2, diff);
+                break;
+            case LARGER: //fixed
+                cout << "Enter two whole numbers seperated by space: ";
+                cin >> *num1 >> *num2;
+                big_int larger = MyFunctions::findLarger(num1, num2);
+                printf("The larger of %lld and %lld is %lld\n", *num1, *num2, larger);
+                break;
+            default:
+                break;
+        }
+        cin.ignore(1000, '\n');
+        cout << "Enter Y or y if you want to continue and any other key if you want to exit. ";
+        cin >> input;
+    }while (input == 'y' || input == 'Y');
     delete num1;
     delete num2;
     delete sum;
