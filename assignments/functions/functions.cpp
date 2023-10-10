@@ -15,6 +15,7 @@ This is a program that is a basic calculator using functions,
 #include <cassert>
 #include <cmath>
 using namespace std;
+void test();
 
 void main() {
     float in1;
@@ -26,6 +27,7 @@ void main() {
     cout << "Please input your second number. " << endl;
     cin >> in2;
 
+
     sum(in1, in2);
     product(in1, in2);
     difference(in1, in2);
@@ -36,7 +38,7 @@ void main() {
 
 }
 
-void sum(float in2, float in1) {
+void sum(float in1, float in2) {
     float sum = in1 + in2;
     cout << "The sum of your numbers is " << sum << endl;
     
@@ -80,4 +82,20 @@ void sr(float in1) {
     cout << "The square root of your first number is " << sq << endl;
 
     return;
+}
+void test() {
+    float tn1 = 1;
+    float tn2 = 2;
+    float tn3 = 3;
+    float tn4 = 4;
+
+    float tn1 = 1;
+    float tn2 = 2;
+    float tn3 = 3;
+    float tn4 = 4;
+    
+
+    float result = sum(tn1, tn2);
+
+
 }
