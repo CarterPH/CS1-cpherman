@@ -42,9 +42,17 @@ void printFlippedTriangle(int height) {
     
     */
     // FIXME3 ...
+    int col = 1;
 
-    
-}
+    while (col <= height) {
+        for (int row = height; row>=col; row--) 
+            cout << "* ";
+        col += 1;
+        cout << endl;
+
+    }
+
+} //fixed
 
 
 /*  
@@ -60,7 +68,16 @@ Square of height 5, e.g., would look like the following.
 *  *  *  *  *   
 
 */
-
+void printSquare(int height) {
+    int row = 1;
+    while(row <= height) {
+        for(int col = 1; col <= height; col++)
+            cout << "* ";
+        
+        row += 1;
+        cout << endl;
+    }
+} //fixed
 // function clears the screen system call
 // NOTE: system call is not a security best pracice!
 void clearScreen() {
@@ -83,13 +100,14 @@ int main(int argc, char* argv[]) {
     printTriangle(height);
 
     // FIXME7
+    printFlippedTriangle(height);
     // Call printFlippedTriangle passing proper argument
     // Manually test the function
 
     // FIXME6
     // Call the function defined in FIXME4 passing proper argument
     // Manually test the function
-
+    printSquare(height);
     // FIXME9
     // prompt user to enter y/Y to continue anything else to quit
 
