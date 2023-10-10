@@ -62,6 +62,19 @@
 | Self Grade | A |
 | Notes | Fixed all parts. |
 
+### Lab #6
+
+| Name | Value |
+| :--- | :--- |
+| Name | 6 - Pointers Lab |
+| Description | Lab covering pointers and namespace lab. |
+| Due Date | 27-Oct-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/pointers |
+| Self Grade | A |
+| Notes | Fixed all parts. |
+
+
 ## Homeworks
 
 ### Homework #1
