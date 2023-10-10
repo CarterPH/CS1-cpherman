@@ -235,7 +235,7 @@ bool program() {
             getTwoNumbers(num1, num2); // fixed
             //FIXME11: call findDifference function and print the result
             double diff = findDifference(num1, num2);
-            printf("The difference is ", diff, "\n"); // fixed
+            printf("%.2f + %.2f = %.2f\n", num1, num2, diff); // fixed
             break;
         }
         case 3:
@@ -243,17 +243,17 @@ bool program() {
             //FIXME12: get two numbers and find their product using functions
             getTwoNumbers(num1, num2);
             double product = findProduct(num1, num2);
-            printf("The product of your two numbers is ", product, "\n");
+            printf("%.2f + %.2f = %.2f\n", num1, num2, product); //fixed
             break;
         }
         // FIXME13: complete the rest of the cases 4, 6, and 7
         // Fixed
-        case 4:
+        case 7:
         {
             double avg;
             getTwoNumbers(num1, num2);
             findAverage(num1, num2, avg);
-            printf("The average of your numbers is ", avg);
+            printf("%.2f + %.2f = %.2f\n", num1, num2, avg);
             break;
 
         }
@@ -274,11 +274,11 @@ bool program() {
             printf("smaller between %.2f & $.2f is %.2f\n", num1, num2, min);
             break;
         }
-        case 7:
+        case 4:
         {
             getTwoNumbers(num1, num2);
             double quo = findQuotient(num1, num2);
-            printf("The quotient of ", num1, " devided by ", num2, " is ", quo, "\n");
+            printf("%.2f + %.2f = %.2f\n", num1, num2, quo);
         }
         case 8:
         default: // must be option 8
