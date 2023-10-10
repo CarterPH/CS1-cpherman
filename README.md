@@ -30,11 +30,23 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | 2 - Functions Lab |
+| Name | 3 - Functions Lab |
 | Description | Lab covering functions. |
 | Due Date | 02-Oct-23 |
 | Status | finished |
 | Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/Functions |
+| Self Grade | A |
+| Notes | Fixed all parts. |
+
+### Lab #4
+
+| Name | Value |
+| :--- | :--- |
+| Name | 4 - Conditionals Lab |
+| Description | Lab covering conditions. |
+| Due Date | 11-Oct-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/conditionals |
 | Self Grade | A |
 | Notes | Fixed all parts. |
 ## Homeworks
