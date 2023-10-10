@@ -110,7 +110,7 @@ double findSum(const double &n1, const double &n2) {
 double findDifference(const double &n1, const double &n2) {
     //FIXME3 - subtract n2 from n1 and return the difference
 
-    return (n2 - n1); //fixed
+    return (n1 - n2); //fixed
 }
 
 double findProduct(const double &n1, const double &n2) {
@@ -235,7 +235,7 @@ bool program() {
             getTwoNumbers(num1, num2); // fixed
             //FIXME11: call findDifference function and print the result
             double diff = findDifference(num1, num2);
-            printf("%.2f + %.2f = %.2f\n", num1, num2, diff); // fixed
+            printf("%.2f - %.2f = %.2f\n", num1, num2, diff); // fixed
             break;
         }
         case 3:
@@ -243,7 +243,7 @@ bool program() {
             //FIXME12: get two numbers and find their product using functions
             getTwoNumbers(num1, num2);
             double product = findProduct(num1, num2);
-            printf("%.2f + %.2f = %.2f\n", num1, num2, product); //fixed
+            printf("%.2f * %.2f = %.2f\n", num1, num2, product); //fixed
             break;
         }
         // FIXME13: complete the rest of the cases 4, 6, and 7
@@ -253,7 +253,7 @@ bool program() {
             double avg;
             getTwoNumbers(num1, num2);
             findAverage(num1, num2, avg);
-            printf("%.2f + %.2f = %.2f\n", num1, num2, avg);
+            printf("%.2f + %.2f / 2 = %.2f\n", num1, num2, avg);
             break;
 
         }
@@ -271,14 +271,14 @@ bool program() {
         {
             getTwoNumbers(num1, num2);
             double min = findSmaller(num1, num2);
-            printf("smaller between %.2f & $.2f is %.2f\n", num1, num2, min);
+            printf("smaller between %.2f & %.2f is %.2f\n", num1, num2, min);
             break;
         }
         case 4:
         {
             getTwoNumbers(num1, num2);
             double quo = findQuotient(num1, num2);
-            printf("%.2f + %.2f = %.2f\n", num1, num2, quo);
+            printf("%.2f / %.2f = %.2f\n", num1, num2, quo);
         }
         case 8:
         default: // must be option 8
