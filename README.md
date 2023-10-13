@@ -100,3 +100,15 @@
 | Location | https://github.com/CarterPH/CS1-cpherman/tree/main/assignments/Triangle |
 | Self Grade | 90/100 |
 | Notes | None |
+
+### Homework #4
+
+| Name | Value |
+| :--- | :--- |
+| Name | 2 - Triangle |
+| Description | Conditionals with numbers |
+| Due Date | 13-Oct-23 |
+| Status | Done |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/assignments/conditionals |
+| Self Grade | 80/100 |
+| Notes | None |
