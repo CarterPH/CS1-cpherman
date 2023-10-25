@@ -105,10 +105,23 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | 2 - Triangle |
+| Name | 4 - Conditionals |
 | Description | Conditionals with numbers |
 | Due Date | 13-Oct-23 |
 | Status | Done |
 | Location | https://github.com/CarterPH/CS1-cpherman/tree/main/assignments/conditionals |
 | Self Grade | 80/100 |
 | Notes | None |
+
+### Homework #5
+
+| Name | Value |
+| :--- | :--- |
+| Name | 5 - Loops |
+| Description | Using loops to guess a number |
+| Due Date | 25-Oct-23 |
+| Status | Done |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/assignments/loops |
+| Self Grade | 95/100 |
+| Notes | None |
+
