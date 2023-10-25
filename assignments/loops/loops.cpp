@@ -26,13 +26,13 @@ int readNumber() {
     do {
         std::cout << "Please enter your guess (between 1 and 20): ";
         std::cin >> g;
-    } while (g < 1 || g > 20);
+    } while (g < 1 || g > 20); // have the user input a number only between 1 and 20
 
     return g;
 }
 
 int checkGuess(int num1, int num2) {
-    if (num1 == num2) {
+    if (num1 == num2) { // check if the number is correct
         return 0;
     }
     else if (num1 < num2) {
@@ -45,7 +45,7 @@ int checkGuess(int num1, int num2) {
 
 void test() {
 
-    assert(checkGuess(2, 3) == -1);
+    assert(checkGuess(2, 3) == -1); // check for all 3 senarios 
     assert(checkGuess(3, 3) == 0);
     assert(checkGuess(4, 3) == 2);
 }
@@ -56,7 +56,7 @@ void game() {
 
     do {
         int guess = readNumber();
-        int res = checkGuess(guess, num);
+        int res = checkGuess(guess, num); // store whether their guess is correct
 
         if (res == 0) {
             cout << "You guessed the number!\n";
@@ -76,7 +76,7 @@ void game() {
             cout << "You took too many tries to guess the number.\n The correct number was " << num << ".\n";
             break;
         }
-    } while (true);
+    } while (true); // stay in loop until broken
 }
 
 int main() {
@@ -87,7 +87,7 @@ int main() {
     cout << "Hi there, what's your name? ";
     getline(cin, name);
 
-    cout << "Nice meeting you, " << name << "!" << endl;
+    cout << "Nice meeting you, " << name << "!" << endl; // print name
     cout << "I am thinking of a number between 1 and 20! \n";
     cout << "You have 6 guesses to find the number. \n";
     do {
@@ -99,9 +99,12 @@ int main() {
 
         std::cout << "Do you want to play again? (Y/N) ";
         std::cin >> playAgain;
-    } while (playAgain == 'y' || playAgain == 'Y');
+    } while (playAgain == 'y' || playAgain == 'Y'); // stay in loop until user inputs
 
     cout << "Thank you for playing. Here are your statistics! \n";
+    cout << "Name: " << name << "\n";
+    cout << "Games Played: " << gamesPlayed << "\n";
     
+
 
 }
