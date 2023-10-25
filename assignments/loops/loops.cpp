@@ -30,3 +30,53 @@ int readNumber() {
 
     return g;
 }
+
+int checkGuess(int num1, int num2) {
+    if (num1 == num2) {
+        return 0;
+    }
+    else if (num1 < num2) {
+        return -1;
+    }
+    else {
+        return 2;
+    }
+}
+
+void test() {
+
+    assert(checkGuess(2, 3) == -1);
+    assert(checkGuess(3, 3) == 0);
+    assert(checkGuess(4, 3) == 2);
+}
+
+void game() {
+    int num = randomNumber();
+    int attempts = 0;
+
+    do {
+        int guess = readNumber();
+        int res = checkGuess(guess, num);
+
+        if (res == 0) {
+            cout << "You guessed the number!\n";
+            break;
+        }
+        else {
+            attempts++;
+            cout << "Wrong. Try guessing ";
+            if (res == -1) {
+                cout << "higher!\n";
+            }
+            else {
+                cout << "lower!\n";
+            }
+        }
+        if (attempts == 6) {
+            cout << "You took too many tries to guess the number.\n The correct number was " << num << ".\n";
+            break;
+        }
+    } while (true);
+}
+
+int main
