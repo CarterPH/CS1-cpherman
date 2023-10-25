@@ -79,4 +79,29 @@ void game() {
     } while (true);
 }
 
-int main
+int main() {
+    char playAgain;
+    int gamesPlayed = 0, gamesWon = 0;
+
+    string name = "Anonymous";
+    cout << "Hi there, what's your name? ";
+    getline(cin, name);
+
+    cout << "Nice meeting you, " << name << "!" << endl;
+    cout << "I am thinking of a number between 1 and 20! \n";
+    cout << "You have 6 guesses to find the number. \n";
+    do {
+        test();
+
+        game();
+
+        gamesPlayed++;
+
+        std::cout << "Do you want to play again? (Y/N) ";
+        std::cin >> playAgain;
+    } while (playAgain == 'y' || playAgain == 'Y');
+
+    cout << "Thank you for playing. Here are your statistics! \n";
+    
+
+}
