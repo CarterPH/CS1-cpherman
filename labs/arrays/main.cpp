@@ -96,7 +96,11 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 			max = nums[i];
 
 		//FIXEME4: compare min with each element and update min
-	}
+        if (min > nums[i])
+        	min = nums[i]; // fixed
+    
+    }
+
 }
 
 //Implements bubble sort
@@ -111,6 +115,7 @@ void bubbleSort(int nums[], int len)
 			if (nums[j] > nums[j+1]) {
 				//FIXME5: swap the values of nums[j] and nums[j+1]
 				// can use built-in swap or implement your own swap
+
 				sorted = false;
 			}
 		}
@@ -122,5 +127,8 @@ big_int findSum(int nums[], int len)
 {
 	big_int sum = 0;
 	//FIXME6: iterate through nums array and add each element to sum
+    for (int i = 0; i < len; i++) {
+        sum += nums[i];
+    } // fixed
 	return sum;
 }
