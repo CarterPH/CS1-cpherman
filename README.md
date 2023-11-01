@@ -90,7 +90,7 @@
 
 | Name | Value |
 | :--- | :--- |
-| Name | 7 - Arrays Lab |
+| Name | 8 - Arrays Lab |
 | Description | Lab covering arrays |
 | Due Date | 10-Nov-23 |
 | Status | finished |
