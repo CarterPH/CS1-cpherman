@@ -30,17 +30,16 @@ int main(int argc, char* argv[]) {
         solve();
 }
 
-string answer(const string &line) {
+string answer(const string &line) { //fixed
     for(int i = 0; i < line.length(); i++) {
       if(line[i]=='s') {
           if(line[i+1]=='s') {
-              cout << "hiss" << endl;
               return "hiss";
           }
       }
      
   }
-  cout << "no hiss" << endl;
+  
   return "no hiss";
     
 }
@@ -49,8 +48,10 @@ string answer(const string &line) {
 void testAnswer() {
     // FIXME4
     // write at least two test cases to test answer()
+    assert(answer("kiss") == "hiss");
+    assert(answer("cold") == "no hiss");
     cerr << "All test cases passed!\n";
-}
+} // fixed
 
 // solving the problem for kattis
 void solve() {
@@ -58,5 +59,7 @@ void solve() {
     // string consists of only lowercase letters (no spaces) upto 30 chars
     // FIXME5
     // read string into line
+    cout << "Please enter a max 30 character phrase." << endl;
+    cin >> line;
     cout << answer(line) << endl;
-}
+} // fixed
