@@ -86,6 +86,18 @@
 | Self Grade | A |
 | Notes | Fixed all parts. |
 
+### Lab #8
+
+| Name | Value |
+| :--- | :--- |
+| Name | 7 - Arrays Lab |
+| Description | Lab covering arrays |
+| Due Date | 10-Nov-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/arrays |
+| Self Grade | A |
+| Notes | Fixed all parts. |
+
 
 
 ## Homeworks
