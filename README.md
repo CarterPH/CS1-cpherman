@@ -74,6 +74,19 @@
 | Self Grade | A |
 | Notes | Fixed all parts. |
 
+### Lab #7
+
+| Name | Value |
+| :--- | :--- |
+| Name | 7 - String Lab |
+| Description | Lab covering strings and the hissing problem |
+| Due Date | 1-Nov-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/Hissing |
+| Self Grade | A |
+| Notes | Fixed all parts. |
+
+
 
 ## Homeworks
 
