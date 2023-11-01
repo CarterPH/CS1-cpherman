@@ -115,7 +115,7 @@ void bubbleSort(int nums[], int len)
 			if (nums[j] > nums[j+1]) {
 				//FIXME5: swap the values of nums[j] and nums[j+1]
 				// can use built-in swap or implement your own swap
-
+                std::swap(nums[j], nums[j + 1]);
 				sorted = false;
 			}
 		}
