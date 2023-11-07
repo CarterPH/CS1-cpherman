@@ -123,7 +123,16 @@ llu binToDec(string binaryNumber)
 {
     // FIXME6 - use algorithm described in Ch03-StdInputOutput chapter
     // or use hints from binToOct function
-    return 0;
+    llu ans = 0;
+    int exp;
+
+    for(int i = binaryNumber.size()-1; i >=0; i--) {
+        exp = binaryNumber.size()-1 - i;
+        int digit = int(binaryNumber[i]) - int('0');
+
+        ans += digit*pow(2, exp);
+    }
+    return ans;
 }
 
 string decToOct(llu num)
