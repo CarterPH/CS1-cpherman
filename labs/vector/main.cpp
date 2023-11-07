@@ -67,7 +67,7 @@ int main()
                 cout << "Enter a positive binary number: \n";
                 cin >> binary;
                 decimalNum = binToDec(binary);
-                printf("(%s) base 2 = (%llu) base 10\n", binary, decimalNum);
+                printf("(%s) base 2 = (%llu) base 10\n", binary.c_str(), decimalNum);
                 break; // fixed
             case 3:
                 cout << "Enter a positive decimal number: \n";
