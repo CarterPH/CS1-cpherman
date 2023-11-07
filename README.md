@@ -98,6 +98,18 @@
 | Self Grade | A |
 | Notes | Fixed all parts. |
 
+### Lab #9
+
+| Name | Value |
+| :--- | :--- |
+| Name | 9 - Vectors Lab |
+| Description | Lab covering vectors |
+| Due Date | 17-Nov-23 |
+| Status | finished |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/labs/vector |
+| Self Grade | A |
+| Notes | Fixed all parts. |
+
 
 
 ## Homeworks
