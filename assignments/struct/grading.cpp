@@ -75,5 +75,19 @@ void sortAvgStudents(vector<Student>& students) {
     }
 }
 int main() {
-    
+    string iFileName;
+    cout << "Enter input file name: ";
+    cin >> iFileName;
+
+    string oFileName;
+    cout << "Enter output file name: ";
+    cin >> oFileName;
+
+    vector<Student> students = readStudentRecords(iFileName);
+
+    sortAvgStudents(students);
+
+    writeStudentRecords(oFileName, students);
+
+    return  0;
 }
