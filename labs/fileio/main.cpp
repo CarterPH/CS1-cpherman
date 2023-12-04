@@ -91,7 +91,8 @@ float findMean(const vector<int> & nums) {
 int findRange(const vector<int> & nums) {
     // FIXME6 - implement function that finds and returns the range value
     // range = max - min
-    return 0;
+    int range = findMax(nums) - findMin(nums);
+    return range;
 }
 
 float findMedian(vector<int> nums) {
