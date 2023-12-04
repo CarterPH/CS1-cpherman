@@ -162,3 +162,15 @@
 | Self Grade | 95/100 |
 | Notes | None |
 
+### Homework #8
+
+| Name | Value |
+| :--- | :--- |
+| Name | 8 - Struct |
+| Description | Using structures and fileio |
+| Due Date | 24-Nov-23 |
+| Status | Done |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/assignments/struct |
+| Self Grade | 95/100 |
+| Notes | None |
+

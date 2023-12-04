@@ -1,3 +1,16 @@
+/*
+
+Carter Herman
+Date : 12/4/23
+Assignment : Structures and Fileio
+Description : This program reads in a file of student records and outputs a file of student records sorted by average grade.
+
+*/
+
+
+
+
+
 #include <iostream>
 #include <fstream>
 #include <vector>
