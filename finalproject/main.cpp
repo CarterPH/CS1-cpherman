@@ -37,37 +37,37 @@ int main() {
     unsigned ran = time(0);
     srand(ran);
 
-    cout<<"Welcome to Hangman!"<<endl;
-    cout<<"You will be given a random word from a list of 100 words."<<endl;
-    cout<<"You will have 6 guesses to guess the word."<<endl;
-    cout<<"If you guess the word correctly, you win!"<<endl;
-    cout<<"If you run out of guesses, you lose!"<<endl;
-    cout<<"Good luck!"<<endl;
+    cout << "Welcome to Hangman!" << endl;
+    cout << "You will be given a random word from a list of 100 words." << endl;
+    cout << "You will have 6 guesses to guess the word." << endl;
+    cout << "If you guess the word correctly, you win!" << endl;
+    cout << "If you run out of guesses, you lose!" << endl;
+    cout << "Good luck!" << endl;
 
-    cout<< "Press enter to continue...";
+    cout << "Press enter to continue...";
     cin.get();
 
-    int wordIndex, gameScore;
     int tryAmt = 0;
+    char option;
 
-    char blank[MAXS];
     int scoreList[MAXL];
     string wordList[MAXL];
-    char option;
 
     readData(MAXL, inputFile, words);
 
     do {
-        
-        scoreList[wordIndex] = gameScore;
-        wordList[wordIndex] = words[wordIndex];
+        system("cls");
+        int wordIndex = rand() % MAXL;
         int maxTries = MAX_TRIES;
-        wordIndex = rand() % MAXL;
+        char blank[MAXS] = {}; 
         int gameScore = guess(words, blank, maxTries, wordIndex);
-        
-        cout<<"Would you like to play again? (y/n)"<<endl;
-        cin>>option;
-        tryAmt++; 
+
+        scoreList[tryAmt] = gameScore;
+        wordList[tryAmt] = words[wordIndex];
+        tryAmt++;
+
+        cout << "Would you like to play again? (y/n)" << endl;
+        cin >> option;
     } while (option == 'y' || option == 'Y');
     
     inputFile.close();
@@ -97,10 +97,9 @@ void writeFile(const int scoreList[], ofstream &outputFile, const string wordLis
 
 int letterAmt(const string words[], char blank[], int MAXL) {
     int randomWord = rand() % MAXL;
-    
+
     for (std::string::size_type i = 0; i < words[randomWord].length(); i++) {
         blank[i] = '_';
-        cout << blank[i] << " ";
     }
 
     return randomWord;
