@@ -1,2 +1,1 @@
-hyphen 6
-gummy 0
+Carter has won: 0games.

@@ -36,7 +36,7 @@ int main() {
 
     unsigned ran = time(0);
     srand(ran);
-
+    system("clear");
     cout << "Welcome to Hangman!" << endl;
     cout << "Hello! What is your name? \n";
     getline(cin, name);
@@ -122,6 +122,8 @@ int guess(const string words[], char blank[], int &maxTries, int wordIndex) {
     const int MAX_WORD_LENGTH = words[wordIndex].length();
 
     while (guessAmt < MAX_TRIES && maxTries > 0) {
+        system("clear");
+        ascii(MAX_TRIES - maxTries);
         cout << "Your word: ";
         for (int i = 0; i < MAX_WORD_LENGTH; i++) {
             if (guessedLetters[tolower(words[wordIndex][i]) - 'a'] || words[wordIndex][i] == ' ') {
@@ -165,6 +167,7 @@ int guess(const string words[], char blank[], int &maxTries, int wordIndex) {
                     blank[i] = words[wordIndex][i];
                     
                 }
+                
                 correctGuess = true;
                 score = score + 1;
             }
@@ -178,7 +181,6 @@ int guess(const string words[], char blank[], int &maxTries, int wordIndex) {
         cout << endl;
         } else {
             maxTries--;
-            ascii(MAX_TRIES - maxTries);
             guessAmt++;
         }
         if (score == MAX_WORD_LENGTH) {
