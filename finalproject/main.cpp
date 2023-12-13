@@ -100,7 +100,7 @@ void readData(const int MAXL, ifstream &inputFile, string words[]) {
 
 void writeFile(const int scoreList[], ofstream &outputFile, string name, int tryAmt, int gamesWon) {
     for (int i = 0; i < tryAmt; i++) {
-        outputFile << name << " has won: " << gamesWon << "games." << endl;
+        outputFile << name << " has won: " << gamesWon << " games." << endl;
     }
 }
 
