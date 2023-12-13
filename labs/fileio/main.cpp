@@ -56,6 +56,9 @@ void readData(vector<int> & numbers, const string inputFileName) {
     ifstream inputFile(inputFileName);
     // read the data until eof marker and store each num into numbers vector
     int num;
+    while (inputFile >> num) {
+        numbers.push_back(num);
+    } // FIXED
 }
 
 void writeData(const vector<int> & numbers) {
@@ -66,6 +69,23 @@ void writeData(const vector<int> & numbers) {
     2. Store and use the file name to open the file in write mode
     3. Write output as shown in output.txt file with proper formatting using iomanip
     */
+    string outFile;
+    cout << "Enter output file name: ";
+    getline(cin, outFile);
+    ofstream outputFile(outFile);
+
+    outputFile << fixed << setprecision(2);
+
+    outputFile << "Data Set: ";
+    for (int num : numbers) {
+        outputFile << num << " ";
+    }
+    outputFile << "\n";
+    outputFile << "Mean: " << findMean(numbers) << "\n";
+    outputFile << "Median: " << findMedian(numbers) << "\n";
+    outputFile << "Maximum: " << findMax(numbers) << "\n";
+    outputFile << "Minimum: " << findMin(numbers) << "\n"; // FIXED
+    outputFile << "Range: " << findRange(numbers) << "\n";
 }
 
 int findMax(const vector<int> & nums) {
@@ -77,8 +97,11 @@ int findMax(const vector<int> & nums) {
 
 int findMin(const vector<int> & nums) {
     // FIXME5 - implement function to find and return min value from nums vector
-    return 0;
-} 
+    int min = nums[0];
+    for (int n : nums)
+        min = (n < min) ? n : min;
+    return min;
+}  // fixed
 
 float findMean(const vector<int> & nums) {
     // same as average
@@ -93,7 +116,7 @@ int findRange(const vector<int> & nums) {
     // range = max - min
     int range = findMax(nums) - findMin(nums);
     return range;
-}
+} // fixed 
 
 float findMedian(vector<int> nums) {
     sort(nums.begin(), nums.end());
@@ -116,7 +139,12 @@ void test() {
     assert(fabs(findMean(numbers1) -1.6667) <= EPSILON  );
     assert(findMax(numbers1) == 10);
     assert(findMedian(numbers1) == 5);
-    // FIXME7: Write at least two test cases for other functions
+
+    vector<int> numbers2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    assert(fabs(findMean(numbers2) -5.5) <= EPSILON);
+    assert(findMax(numbers2) == 10);
+    assert(findMedian(numbers2) == 5.5);
+    // FIXME7: Write at least two test cases for other functions //fixed
 
     cerr << "all test cases passed!\n";
 }
