@@ -174,3 +174,15 @@
 | Self Grade | 95/100 |
 | Notes | None |
 
+### Final Project
+| Name | Value |
+| :--- | :--- |
+| Name | Hangman |
+| Description | Use the knowledge of the semester |
+| Due Date | 12-Dec-23 |
+| Status | Done |
+| Location | https://github.com/CarterPH/CS1-cpherman/tree/main/finalproject |
+| Self Grade | 90/100 |
+| Notes | None |
+
+
