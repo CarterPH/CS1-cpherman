@@ -21,7 +21,7 @@ using namespace std;
 const int MAX_TRIES = 6;
 
 void readData(const int, ifstream &, string[]);
-void writeFile(const int[], ofstream &, const string[], int);
+void writeFile(const int[], ofstream &, string, int, int);
 int letterAmt(const string [], char [], const int);
 void ascii(int);
 int guess(const string[], char[], int &maxTries, int wordIndex);
@@ -29,7 +29,7 @@ int guess(const string[], char[], int &maxTries, int wordIndex);
 int main() {
     const int MAXL = 100;
     const int MAXS = 100;
-
+    string name;
     string words[MAXS];
     ifstream inputFile;
     inputFile.open("words.txt");
@@ -38,6 +38,8 @@ int main() {
     srand(ran);
 
     cout << "Welcome to Hangman!" << endl;
+    cout << "Hello! What is your name? \n";
+    getline(cin, name);
     cout << "You will be given a random word from a list of 100 words." << endl;
     cout << "You will have 6 guesses to guess the word." << endl;
     cout << "If you guess the word correctly, you win!" << endl;
@@ -66,7 +68,7 @@ int main() {
         scoreList[tryAmt] = gameScore;
         wordList[tryAmt] = words[wordIndex];
         tryAmt++;
-        
+
         if (gameScore == words[wordIndex].length()) {
             gamesWon++;
         }
@@ -82,7 +84,7 @@ int main() {
     ofstream outputFile;
     outputFile.open("scores.txt");
 
-    writeFile(scoreList, outputFile, wordList, tryAmt);
+    writeFile(scoreList, outputFile, name, tryAmt, gamesWon);
 
     outputFile.close();
 
@@ -96,9 +98,9 @@ void readData(const int MAXL, ifstream &inputFile, string words[]) {
     }
 }
 
-void writeFile(const int scoreList[], ofstream &outputFile, const string wordList[], int tryAmt) {
+void writeFile(const int scoreList[], ofstream &outputFile, string name, int tryAmt, int gamesWon) {
     for (int i = 0; i < tryAmt; i++) {
-        outputFile << wordList[i] << " " << scoreList[i] << endl;
+        outputFile << name << " has won: " << gamesWon << "games." << endl;
     }
 }
 
